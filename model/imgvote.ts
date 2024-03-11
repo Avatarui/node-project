@@ -1,6 +1,6 @@
 export interface  imgvote {
     uid : number;
-    url :   number;
+    picture_id :   number;
     point :  number;
     isWinner :  boolean;
 }  //vote
