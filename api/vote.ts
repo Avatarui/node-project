@@ -22,7 +22,7 @@ router.post("/insertimg",(req,res)=>{
      let sql = "INSERT INTO `vote`(`uid`, `picture_id`, `point`,`isWinner`) VALUES (?,?,?,?)";
      sql = mysql.format(sql,[
         imgtovotes.uid,
-        imgtovotes.url,
+        imgtovotes.picture_id,
         imgtovotes.point,
         imgtovotes.isWinner,
     ]);
