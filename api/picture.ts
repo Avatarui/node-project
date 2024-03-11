@@ -20,7 +20,7 @@ router.get("/", (req, res) => {
   router.put("/update/:imgid", async(req,res)=>{
     const imgid = +req.params.imgid;
     let img : UpDateImg = req.body;
-        let sql = "update  picture set point`=? where picture_id`=?";
+        let sql = "update  picture set `point`=? where `picture_id`=?";
         sql = mysql.format(sql , [
             img.point,
             imgid
